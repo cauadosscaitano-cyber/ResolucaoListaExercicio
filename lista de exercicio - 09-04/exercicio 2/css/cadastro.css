@@ -1,0 +1,104 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* FUNDO */
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* WRAPPER */
+.auth-wrapper {
+    width: 100%;
+    padding: 20px;
+}
+
+/* CAIXA */
+.auth-box {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    animation: fadeIn 0.6s ease;
+}
+
+/* TÍTULO */
+.auth-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #1e293b;
+}
+
+/* INPUTS */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #cbd5f5;
+    outline: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99,102,241,0.2);
+}
+
+/* BOTÃO */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #4f46e5;
+}
+
+/* ERRO */
+.erro {
+    color: #ef4444;
+    font-size: 13px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* LINK */
+.auth-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: #6366f1;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}

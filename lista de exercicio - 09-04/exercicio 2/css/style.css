@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+/* Seções */
+section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* Títulos */
+h2 {
+    margin-bottom: 15px;
+    color: #0077cc;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+/* Listas */
+ol {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+thead {
+    background-color: #0077cc;
+    color: white;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+tfoot {
+    background-color: #eee;
+    font-weight: bold;
+}
+
+/* Imagens */
+img {
+    display: block;
+    margin: 15px 0;
+    max-width: 100%;
+}
+
+/* Links */
+a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Aside */
+aside {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 15px;
+    border-left: 4px solid #0077cc;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #777;
+}

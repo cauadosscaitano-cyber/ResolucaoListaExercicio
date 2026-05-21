@@ -1,0 +1,47 @@
+body{
+    background-color:#ddd;
+    font-family:"Arial Narrow", Arial, sans-serif;
+    color:#444;
+    line-height:1.5;
+}
+
+img{
+   width:120px;
+   height:120px;
+}
+
+main{
+    background-color:white;
+    width:800px;
+    margin:30px auto;
+    padding:20px;
+    border-radius:10px;
+}
+
+section{
+    margin-bottom:20px;
+}
+
+header h1{
+    font-size:32px;
+    font-weight:bold;
+    color:#db8102;
+}
+
+header h2{
+    font-size:30px;
+    font-weight:bold;
+    color:#db8102;
+    line-height:2.5;
+    border-top:1px solid #ccc;
+    margin: 0;
+}
+
+ol, ul{
+    margin-left:20px;
+}
+
+a{
+    color:blue;
+    text-decoration:underline;
+}

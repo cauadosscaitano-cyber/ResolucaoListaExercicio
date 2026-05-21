@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="../estilos/formulario.css" />
+    <script>
+      //O retorno do prompt é sempre tipo string
+      let nome = prompt("Qual o seu nome?");
+      //Para converter string para nº é necessário utilizar a função Number, ou parseInt, parseFloat.
+      let idade = Number(prompt("Qual a sua idade?"));
+      //console.log(nome + ", seja bem vindo(a) ao JavaScript");
+      alert("Olá, " + nome + " de " + idade + " seja bem vindo(a) ao JS!!");
+      if (idade >= 18) {
+        alert("Parabéns!");
+      } else {
+        alert("voce não tem permissão para preencher o formulário");
+        window.location.href = "../index.html";
+      }
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <figure></figure>
+      <h1>Cauã dos santos</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Página Principal</a></li>
+        <li><a href="../paginas/sobre.html">Sobre</a></li>
+        <li><a href="contato.html">Contatos</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Formulário de contato</h2>
+      <form id="formulario" action="respFormulario.html" method="post">
+        <fieldset>
+          <legend>Formulário de contato</legend>
+
+          <label for="lbNome">Nome:</label>
+          <input
+            type="text"
+            id="ipNome"
+            name="ipNome"
+            required
+            title="ipNome"
+          />
+
+          <label for="lbEmail">Email:</label>
+          <input
+            type="email"
+            id="ipEmail"
+            name="ipEmail"
+            required
+            title="ipEmail"
+          />
+
+          <label for="lbMensagem">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" rows="5" title="mensagem">
+          </textarea>
+
+          <label for="lbContato">Motivo do Contato</label>
+          <select name="slMotivo" id="slMotivo" title="slMotivo">
+            <option value="suporte">Suporte</option>
+            <option value="vendas">Vendas</option>
+            <option value="servicos">serviços</option>
+            <option value="feedback">Feedback</option>
+            <option value="outros">Outros</option>
+          </select>
+          <input type="submit" value="Enviar" />
+        </fieldset>
+      </form>
+    </main>
+    <footer>
+      <p>Rodapé da Página</p>
+      <p>Desenvolvido por NATHAN CLEMENTINO &copy;2026</p>
+    </footer>
+  </body>
+</html>
